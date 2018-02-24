@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.donntu.itt.dehax.bluetoothmanager.MainActivity"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <TextView
+        android:id="@+id/bluetoothName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please, turn on Bluetooth to get device name!"
+        />
+
+    <TextView
+        android:id="@+id/bluetoothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth is turned off."
+        />
+
+    <ListView
+        android:id="@+id/devicesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>
